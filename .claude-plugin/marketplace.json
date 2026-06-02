@@ -1,0 +1,11 @@
+{
+  "name": "local-skills",
+  "owner": { "name": "boris" },
+  "plugins": [
+    {
+      "name": "mattpocock-skills",
+      "source": "./",
+      "description": "Matt Pocock's engineering and productivity skills (local checkout)"
+    }
+  ]
+}
