@@ -25,3 +25,8 @@ New-Item -ItemType Junction -Path $link -Target $target
 ```
 
 A directory junction (no admin needed) keeps the installed copy in sync with the repo — edit the file here, and the change is picked up on the next Claude Code restart. The skill loads as plain `/<skill-name>`, not under the plugin namespace. Remove with `Remove-Item $link` (deletes only the junction, not the source folder).
+
+<!-- agent-memory-kit:governance -->
+## Agent memory & self-improvement (repo-local)
+
+This repo carries the **agent-memory-kit**. At the start of role work, consult `.agent-memory/roles/<role>/MEMORY.md`; at the end of meaningful work emit a `memory_proposal` block for reusable, evidence-backed learnings only. Only the architect or `memory-curator` promotes proposals. Role agents live in `.claude/agents/`; rules in `.claude/rules/memory-governance.md`. Maintenance: `/memory-maintain` or `python3 memory_maintainer.py --config .agent-memory/memory-maintainer.json --apply --json`. See `.agent-memory/README.md`.
