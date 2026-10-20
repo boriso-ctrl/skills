@@ -1,11 +1,17 @@
 {
   "name": "local-skills",
-  "owner": { "name": "boris" },
+  "owner": {
+    "name": "boris",
+    "url": "https://github.com/boriso-ctrl"
+  },
+  "description": "Matt Pocock's skills for real engineering, as an installable Claude Code plugin (local fork checkout).",
   "plugins": [
     {
       "name": "mattpocock-skills",
       "source": "./",
-      "description": "Matt Pocock's engineering and productivity skills (local checkout)"
+      "description": "Matt Pocock's agent skills for real engineering (grilling, spec/ticket flows, TDD, code review, domain modelling and more).",
+      "category": "engineering",
+      "keywords": ["engineering", "skills", "tdd", "code-review", "grilling"]
     }
   ]
 }

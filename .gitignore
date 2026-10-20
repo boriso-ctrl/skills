@@ -1,3 +1,5 @@
+node_modules
+.claude
 .agent-memory/audit/
 __pycache__/
 .pytest_cache/
